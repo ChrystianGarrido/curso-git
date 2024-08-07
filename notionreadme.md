@@ -11,3 +11,16 @@ git push: Envia as alterações locais para o repositório remoto. Isso é essen
 git branch: Lista, cria ou deleta ramificações (branches) no repositório. Branches permitem que você trabalhe em diferentes recursos ou correções simultaneamente.*/basta digitar git branch -M main <o novo nome>/*
 git log: Mostra o histórico de commits do repositório. É útil para entender quem fez o quê e quando.
 git log --pretty=oneline : mostra o histórico de comits do repositório em uma linha.
+
+Aula2:
+"INFORMAÇÕES RELATIVAS A NOVOS CÓDIGOS GIT"
+git commit -am =====> é uma forma conveniente de combinar duas etapas em uma só: adicionar arquivos ao stage e fazer o commit.
+
+git commit -a: O argumento -a (ou --all) diz ao Git para automaticamente adicionar todos os arquivos modificados e rastreados ao stage antes de fazer o commit. Isso significa que ele pega todos os arquivos que estavam no seu último commit e foram modificados desde então. No entanto, ele não adiciona arquivos não rastreados (ou seja, novos arquivos que você ainda não adicionou ao Git).
+
+git commit -m "mensagem": O argumento -m (ou --message) permite que você especifique uma mensagem de commit diretamente na linha de comando. A mensagem deve estar entre aspas duplas. Essa mensagem é uma breve descrição das mudanças que você está comprometendo.
+
+Portanto, quando você usa git commit -am "mensagem", o Git primeiro adiciona automaticamente todos os arquivos modificados e rastreados ao stage (usando o -a). Em seguida, ele faz o commit dessas mudanças com a mensagem especificada (usando o -m). É uma maneira rápida de fazer ambos os passos em uma única linha de comando.
+
+git add .  # Adiciona todos os arquivos modificados e rastreados ao stage
+git commit -m "mensagem"  # Faz o commit com a mensagem especificada
